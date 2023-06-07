@@ -2,7 +2,7 @@ package org.example;
 
 import org.example.annotation.Controller;
 import org.example.annotation.Service;
-import org.example.model.User;
+import org.example.mvc.model.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.reflections.Reflections;
@@ -72,7 +72,7 @@ public class ReflectionTest {
         Class<? extends User> clazz2 = user.getClass();
 
         // 3
-        Class<?> clazz3 = Class.forName("org.example.model.User");
+        Class<?> clazz3 = Class.forName("org.example.mvc.model.User");
 
         logger.debug("clazz: [{}]", clazz);
         logger.debug("clazz2: [{}]", clazz2);
